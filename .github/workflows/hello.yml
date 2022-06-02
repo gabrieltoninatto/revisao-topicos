@@ -1,0 +1,12 @@
+name: Hello World
+
+on: [push]
+
+jobs:
+  Print-Hello Word:
+  run-on: ubuntu-latest
+  steps:
+   -run: echo Hello World
+   -name: Check o repositorio 
+   uses: actions/checkout@v3
+   -run: echo ok...
